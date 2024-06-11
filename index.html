@@ -23,7 +23,8 @@
             <a href="#about-me">Sobre mi</a>
             <a href="#projects">Proyectos</a>
             <a href="#contact">Contacto</a>
-            <i id="light-theme" class="bx bx-sun"></i>
+            <i id="light-mode" class='bx bxs-moon'></i>
+            <!-- <i id="dark-mode" class="bx bx-sun"></i> -->
             <div class="languaje-btn"><i class="uil uil-english-to-chinese"></i></div>
         </nav>
     </header>
@@ -38,7 +39,10 @@
                 Lorem ipsum dolor sit amet consectetur. Praesent morbi ipsum sem id
                 in. Ut aenean feugiat penatibus id commodo interdum id arcu neque.
             </p>
-            <button class="contact-btn" type="button">Contáctame aquí</button>
+            <div class="contact-btn-container">               
+                <button class="contact-btn" type="button">Contáctame aquí <i class='bx bx-envelope mail-icon' ></i></button>
+            </div>
+            
         </div>
         </div>
         </div>
@@ -71,8 +75,9 @@
                 <i class='bx bxl-css3 icon' id="css-icon"></i>
                 <i class='bx bxl-javascript icon' id="js-icon"></i>
                 <i class='bx bxl-java icon' id="java-icon"></i>
+                <i class='bx bxl-spring-boot icon' id="spring-icon"></i>
                 <i class='bx bxl-git icon' id="git-icon"></i>
-                <i class='bx bxl-github icon' icon id="gh-icon"></i>
+                <i class='bx bxl-github icon' id="gh-icon"></i>
             </div>
         </div>
 
@@ -92,7 +97,9 @@
                         <div class="body-card-back">
                             <p>Project description: Lorem ipsum dolor sit amet consectetur. Praesent morbi ipsum sem id
                                 in. Ut aenean feugiat penatibus id commodo interdum id arcu neque.</p>
-                            <input type="button" value="Go to project">
+                                <div class="project-btn">
+                                    <input type="button" value="Go to project">
+                                </div>                            
                         </div>
                     </div>
                 </div>
@@ -107,7 +114,9 @@
                         <div class="body-card-back">
                             <p>Project description: Lorem ipsum dolor sit amet consectetur. Praesent morbi ipsum sem id
                                 in. Ut aenean feugiat penatibus id commodo interdum id arcu neque.</p>
-                            <input type="button" value="Go to project">
+                                <div class="project-btn">
+                                    <input type="button" value="Go to project">
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -119,8 +128,8 @@
         <div class="contact-container">
             <div class="form-container">
                 <form action="" class="contact-form">
-                    <input type="text" placeholder="NOMBRE" />
-                    <input type="email" placeholder="EMAIL" />
+                    <input type="text" placeholder="NOMBRE" id="name"/>
+                    <input type="email" placeholder="EMAIL" id="email" />
                     <textarea name="mesagge" id="message" placeholder="MENSAJE"></textarea>
                     <button type="submit">Enviar <i class='bx bx-send'></i></button>
                 </form>
@@ -138,8 +147,10 @@
     </section>
     <footer></footer>
     <script src="script.js"></script>
+    <script src="formulary.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </body>
 
 </html>
