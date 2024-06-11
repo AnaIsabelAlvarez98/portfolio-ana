@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --primary-color-ligth-theme: #f4f2ef;
+  --secondary-color: #98c0c5;
+  --deep-blue: #223f61;
+  --green: #adac54;
+  --button-color: #408c6d;
+  --secundary-button-color: #1e7773;
+  --black: #262425;
+  --whithe: #fefefe;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  color: var(--black);
+}
+/* Header section */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 8% 30px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+.logo {
+  font-size: 45px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none;
+  color: var(--black);
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+.logo span{
+    color: var(--secundary-button-color);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar a{
+    font-size: 25px;
+    color: var(--black);
+    margin-left: 60px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+.navbar a:hover, .navbar a.active{
+    color: var(--secundary-button-color);
+    border-bottom: 3px solid var(--secundary-button-color);
+}
+#menu-icon{
+    font-size: 50px;
+    color: var(--deep-blue);
+    display: none;
+}
+#light-theme{
+  background-color: #F6AD55;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 30px;
+}
+.languaje-btn{
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+section{
+    min-height: 100vh;
+    padding: 160px 12% 160px;
+}
+/* Home section */
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+}
+.home-img img{
+    position: relative;
+    top: 20px;
+    width: 28vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--secondary-color);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.home-img img:hover{
+    box-shadow: 0 0 25px var(--secondary-color),
+                0 0 50px var(--secondary-color),
+                0 0 100px var(--secondary-color);
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 45px;
+    gap: 15px;
+}
+.home-content h1{
+    margin-top: 15px;
+    font-size: 100px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+.home-content span{
+    color: var(--secundary-button-color);
+}
+.home-content h3{
+    margin-top: 15px;
+    font-size: 45px;
+    margin-top: 25px;
+    line-height: 1;
+}
+.home-content p{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.8;
+    max-width: 1000px;
+}
+.contact-btn{
+ width: 35%;
+ padding: 10px;
+ background-color: var(--secondary-color);
+ border: none;
+ border-radius: 15px;
+ font-size: 20px;
+}
+.text-animation{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+.text-animation span{
+    position: relative;
+}
+.text-animation span::before{
+    content: "Desarroladora Fullstack";
+    color: var(--secundary-button-color);
+    animation: words 20s infinite;
+}
+.text-animation span::after{
+    content: "";
+    background-color: var(--primary-color-ligth-theme);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--button-color);
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14)infinite ;
+}
+@keyframes cursor{
+    to{
+        border-left: 2px solid var(--button-color);
+    }
+}
+@keyframes words {
+    0%,
+    100%{
+        content: "Desarrolladora Fullstack";
+    }
+}
+@keyframes typing{
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95%{
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85%{
+        width: calc(100% + 8px);
+    }
+}
+/* About me section */
+.heading{
+    font-size: 80px;
+    text-align: start;
+    margin: 30px 0;
+}
+.about-me-info p{
+    font-size: 24px;
+    /* display: flex; */
+    text-align: justify;
+}
