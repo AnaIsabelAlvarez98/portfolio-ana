@@ -6,11 +6,11 @@
 }
 :root {
   --primary-color-ligth-theme: #f4f2ef;
-  --secondary-color: #98c0c5;
+  --secundary-color: #1e7773;
+  --light-blue: #98c0c5;
   --deep-blue: #223f61;
-  --green: #adac54;
-  --button-color: #408c6d;
-  --secundary-button-color: #1e7773;
+  --light-green: #adac54;
+  --dark-green: #408c6d;
   --black: #262425;
   --white: #fefefe;
 }
@@ -51,7 +51,7 @@ body {
   transform: scale(1.1);
 }
 .logo span {
-  color: var(--secundary-button-color);
+  color: var(--secundary-color);
 }
 .navbar {
   display: flex;
@@ -70,11 +70,11 @@ body {
 }
 /* .navbar a:hover,
 .navbar a.active {
-  color: var(--secundary-button-color);
-  border-bottom: 3px solid var(--secundary-button-color);
+  color: var(--secundary-color);
+  border-bottom: 3px solid var(--secundary-color);
 } */
 .navbar a.active{
-    color: var(--secundary-button-color);
+    color: var(--secundary-color);
 }
 .navbar a::after{
     content: "";
@@ -83,7 +83,7 @@ body {
     height: 4px;
     bottom: 0;
     left: 0;
-    background-color: var(--secundary-button-color);
+    background-color: var(--secundary-color);
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.6s ease-out;
@@ -109,7 +109,7 @@ body {
   margin-left: 30px;
 }
 .languaje-btn {
-  background-color: var(--secondary-color);
+  background-color: var(--light-blue);
   width: 30px;
   height: 30px;
   font-size: 20px;
@@ -135,13 +135,13 @@ section {
   top: 20px;
   width: 28vw;
   border-radius: 50%;
-  box-shadow: 0 0 25px var(--secondary-color);
+  box-shadow: 0 0 25px var(--light-blue);
   cursor: pointer;
   transition: 0.4s ease-in-out;
 }
 .home-img img:hover {
-  box-shadow: 0 0 25px var(--secondary-color), 0 0 50px var(--secondary-color),
-    0 0 100px var(--secondary-color);
+  box-shadow: 0 0 25px var(--light-blue), 0 0 50px var(--light-blue),
+    0 0 100px var(--light-blue);
 }
 .home-content {
   display: flex;
@@ -159,7 +159,7 @@ section {
   margin-top: 25px;
 }
 .home-content span {
-  color: var(--secundary-button-color);
+  color: var(--secundary-color);
 }
 .home-content h3 {
   margin-top: 15px;
@@ -176,7 +176,7 @@ section {
 .contact-btn {
   width: 35%;
   padding: 10px;
-  background-color: var(--secondary-color);
+  background-color: var(--light-blue);
   border: none;
   border-radius: 15px;
   font-size: 20px;
@@ -191,7 +191,7 @@ section {
 }
 .text-animation span::before {
   content: "Desarroladora Fullstack";
-  color: var(--secundary-button-color);
+  color: var(--secundary-color);
   animation: words 20s infinite;
 }
 .text-animation span::after {
@@ -200,13 +200,13 @@ section {
   position: absolute;
   width: calc(100% + 8px);
   height: 100%;
-  border-left: 3px solid var(--button-color);
+  border-left: 3px solid var(--secundary-color);
   right: -8px;
   animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
 @keyframes cursor {
   to {
-    border-left: 2px solid var(--button-color);
+    border-left: 2px solid var(--secundary-color);
   }
 }
 @keyframes words {
@@ -258,7 +258,7 @@ section {
   justify-content: space-between;
 }
 .about-info {
-  border: 2px solid var(--secondary-color);
+  border: 2px solid var(--light-blue);
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 10px;
@@ -275,7 +275,7 @@ section {
   margin-top: 160px;
 }
 .icon:hover{
-    color: var(--secundary-button-color);
+    color: var(--secundary-color);
     animation: bounce 1.5s ease-in-out;
 }
 
@@ -309,10 +309,10 @@ section {
 .project-card {
   width: 480px;
   height: 500px;
-  background-color: var(--secondary-color);
+  background-color: var(--light-blue);
   position: relative;
   transform-style: preserve-3d;
-  transition: all 600ms;
+  transition: all 0.6s;
   border-radius: 20px;
 }
 .project-card:hover {
@@ -359,13 +359,13 @@ section {
   font-size: 16px;
   cursor: pointer;
   border: none;
-  background-color: var(--secondary-color);
+  background-color: var(--light-blue);
   color: var(--white);
   border-radius: 20px;
   transition: box-shadow 600ms;
 }
 .body-card-back input:hover {
-  box-shadow: 1px 1px 20px -5px var(--secondary-color);
+  box-shadow: 1px 1px 20px -5px var(--light-blue);
 }
 /* ------Contact------ */
 .contact-container {
@@ -411,18 +411,19 @@ section {
   font-size: 16px;
   cursor: pointer;
   border: none;
-  background-color: var(--secundary-button-color);
+  background-color: var(--secundary-color);
   color: var(--white);
   border-radius: 20px;
-  transition: box-shadow 600ms;
+  transition: box-shadow 0.6;
 }
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-  box-shadow: 1px 1px 20px -5px var(--secundary-button-color);;
+  box-shadow: 1px 1px 20px -5px var(--light-blue);;
 }
 .contact-form button:hover {
-  box-shadow: 1px 1px 20px -5px var(--secundary-button-color);
+  box-shadow: 1px 1px 20px -5px var(--light-blue);
+  transform: scale(1.05);
 }
 
 .contact-info {
@@ -434,7 +435,10 @@ section {
   border-radius: 20px;
   box-shadow: 1px 1px 20px -5px var(--deep-blue);;
 }
-
+.contact-info .mail-icon{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
 .contact-info p {
   font-size: 25px;
   font-weight: 500;
@@ -445,5 +449,12 @@ section {
 .contact-icons {
   display: flex;
   gap: 20px;
-  font-size: 60px;
+  font-size: 60px;  
+}
+.cicon{
+    transition: transform 0.3s ease;
+}
+.cicon:hover{
+    color: var(--secundary-color);
+    transform: scale(1.1);
 }
