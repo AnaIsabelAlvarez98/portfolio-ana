@@ -117,7 +117,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   languageBtn.addEventListener("click", () => {
     languageBtn.classList.toggle("clicked");
-    // Aquí puedes agregar cualquier otra lógica relacionada con el cambio de idioma
   });
 
   const menuIcon = document.getElementById('menu-icon');
