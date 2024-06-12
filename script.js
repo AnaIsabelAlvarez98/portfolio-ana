@@ -119,4 +119,11 @@ document.addEventListener("DOMContentLoaded", () => {
     languageBtn.classList.toggle("clicked");
     // Aquí puedes agregar cualquier otra lógica relacionada con el cambio de idioma
   });
+
+  const menuIcon = document.getElementById('menu-icon');
+  const navbar = document.querySelector('.navbar');
+
+  menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+  });
 });

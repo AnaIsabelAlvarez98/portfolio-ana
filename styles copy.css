@@ -12,8 +12,8 @@
   --button-color: #67b9b4;
   --form-color: #223f61;
   --theme-color: #9189b3;
-  --section-color-1: #e8e5e8;
-  --section-color-2: #d9dcdd;
+  --section-color-1: #E8E5E8;
+  --section-color-2: #D9DCDD;
   --white: #fefefe;
 }
 
@@ -24,8 +24,8 @@
   --button-color: #45af93;
   --form-color: #408c6d;
   --theme-color: #f6ad55;
-  --section-color-1: #2b2629;
-  --section-color-2: #272a2f;
+  --section-color-1: #2B2629;
+  --section-color-2:#272A2F;
 }
 
 html {
@@ -334,8 +334,8 @@ section {
   }
 }
 /*------ ABOUT ME SECTION------ */
-#about-me {
-  background-color: var(--section-color-1);
+#about-me{
+  background-color: var(--section-color-1) ;
 }
 .heading {
   font-size: 80px;
@@ -395,7 +395,7 @@ section {
   }
 }
 /* ------PROJECTS------ */
-#projects {
+#projects{
   background-color: var(--section-color-2);
 }
 .projects-container {
@@ -557,7 +557,7 @@ textarea::placeholder {
   transform: scale(1.05);
 }
 
-#message-send {
+#message-send{
   display: none;
   text-align: center;
   font-size: 24px;
@@ -602,20 +602,9 @@ textarea::placeholder {
   transform: scale(1.1);
 }
 /* Responsive Styles */
-@media (max-width: 1200px) {
-  .header {
-    padding: 20px 2%;
-  }
-  .navbar a {
-    font-size: 20px;
-    margin-left: 30px;
-  }
-}
 @media (max-width: 1024px) {
   .header {
-    width: 100%;
-    padding: 10px 2%;
-    justify-content: center;
+    padding: 20px 6%;
   }
 
   .logo {
@@ -624,7 +613,7 @@ textarea::placeholder {
 
   .navbar a {
     font-size: 20px;
-    margin-left: 30px;
+    margin-left: 40px;
   }
 }
 
@@ -677,3 +666,4 @@ textarea::placeholder {
     font-size: 16px;
   }
 }
+
