@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ana Álvarez|Desarrolladora Fullstack</title>
+    <title>Ana Álvarez | Desarrolladora Fullstack</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -28,21 +27,18 @@
             </ul>
             <div class="nav-buttons">
                 <i id="light-mode" class='bx bxs-moon'></i>
-                <!-- <i id="dark-mode" class="bx bx-sun"></i> -->
                 <div class="languaje-btn"><i class="uil uil-english-to-chinese"></i></div>
-                <!-- <i class="bx bx-menu" id="menu-icon"></i>
-            <i class="uil uil-times" id="close-menu"></i> -->
             </div>
-        <div id="burger-menu" onclick="toggleMobileMenu(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <ul class="mobile-menu">
-                <li><a class="menu-links" href="#about-me">Sobre mi</a></li>
-                <li><a class="menu-links" href="#projects">Proyectos</a></li>
-                <li><a class="menu-links" href="#contact">Contacto</a></li>
-            </ul>
-        </div>
+            <div id="burger-menu" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a class="menu-links" href="#about-me">Sobre mi</a></li>
+                    <li><a class="menu-links" href="#projects">Proyectos</a></li>
+                    <li><a class="menu-links" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <section class="home" id="home">
@@ -53,17 +49,11 @@
             <h1>Hola! soy <span>Ana</span></h1>
             <h3 class="text-animation"><span></span></h3>
             <p>
-                Soy una entusiasta desarrolladora Fullstack Java. Mi pasión es crear soluciones innovadoras y eficientes
-                que impulsen el mundo digital. Echa un vistazo a mis proyectos y no dudes en contactarme si deseas
-                colaborar.
+                Soy una entusiasta desarrolladora Fullstack Java. Mi pasión es crear soluciones innovadoras y eficientes que impulsen el mundo digital. Echa un vistazo a mis proyectos y no dudes en contactarme si deseas colaborar.
             </p>
             <div class="contact-btn-container">
-                <button class="contact-btn" type="button">Contáctame aquí <br><i
-                        class='bx bx-envelope mail-icon'></i></button>
+                <button class="contact-btn" type="button">Contáctame aquí <br><i class='bx bx-envelope mail-icon'></i></button>
             </div>
-
-        </div>
-        </div>
         </div>
     </section>
     <section id="about-me">
@@ -72,16 +62,12 @@
             <div class="info-container">
                 <div class="about-info" id="about-info-left">
                     <p>
-                        Soy Ana, una apasionada desarrolladora Fullstack con experiencia tanto en el diseño frontend con
-                        JavaScript como en el desarrollo backend con Java y Spring. Mi enfoque es crear aplicaciones web
-                        robustas y escalables que ofrezcan una experiencia excepcional al usuario.
+                        Soy Ana, una apasionada desarrolladora Fullstack con experiencia tanto en el diseño frontend con JavaScript como en el desarrollo backend con Java y Spring. Mi enfoque es crear aplicaciones web robustas y escalables que ofrezcan una experiencia excepcional al usuario.
                     </p>
                 </div>
                 <div class="about-info" id="about-info-rigth">
                     <p>
-                        Mi habilidad para el diseño frontend me permite crear interfaces atractivas y funcionales,
-                        mientras que mi experiencia en el desarrollo backend garantiza la robustez y seguridad de las
-                        aplicaciones.
+                        Mi habilidad para el diseño frontend me permite crear interfaces atractivas y funcionales, mientras que mi experiencia en el desarrollo backend garantiza la robustez y seguridad de las aplicaciones.
                     </p>
                 </div>
             </div>
@@ -95,7 +81,6 @@
                 <i class='bx bxl-github icon' id="gh-icon"></i>
             </div>
         </div>
-
     </section>
     <section id="projects" class="projects">
         <h2 class="heading">Proyectos</h2>
@@ -104,14 +89,13 @@
                 <div class="project-card">
                     <div class="card-front">
                         <div class="body-card-front">
-                            <h3>Project tittle</h3>
+                            <h3>Project title</h3>
                             <img src="/img/49499cddba4d6d445125043f2592eb7b.png" alt="">
                         </div>
                     </div>
                     <div class="card-back">
                         <div class="body-card-back">
-                            <p>Project description: Lorem ipsum dolor sit amet consectetur. Praesent morbi ipsum sem id
-                                in. Ut aenean feugiat penatibus id commodo interdum id arcu neque.</p>
+                            <p>Project description: Lorem ipsum dolor sit amet consectetur. Praesent morbi ipsum sem id in. Ut aenean feugiat penatibus id commodo interdum id arcu neque.</p>
                             <div class="project-btn">
                                 <input type="button" value="Go to project">
                             </div>
@@ -121,14 +105,13 @@
                 <div class="project-card">
                     <div class="card-front">
                         <div class="body-card-front">
-                            <h3>Project tittle</h3>
+                            <h3>Project title</h3>
                             <img src="/img/49499cddba4d6d445125043f2592eb7b.png" alt="">
                         </div>
                     </div>
                     <div class="card-back">
                         <div class="body-card-back">
-                            <p>Project description: Lorem ipsum dolor sit amet consectetur. Praesent morbi ipsum sem id
-                                in. Ut aenean feugiat penatibus id commodo interdum id arcu neque.</p>
+                            <p>Project description: Lorem ipsum dolor sit amet consectetur. Praesent morbi ipsum sem id in. Ut aenean feugiat penatibus id commodo interdum id arcu neque.</p>
                             <div class="project-btn">
                                 <input type="button" value="Go to project">
                             </div>
@@ -142,17 +125,15 @@
         <h2 class="heading">Contacto</h2>
         <div class="contact-container">
             <div class="form-container">
-                <form action="" class="contact-form">
+                <form id="contact-form" class="contact-form">
                     <input type="text" placeholder="NOMBRE" id="name" />
                     <input type="email" placeholder="EMAIL" id="email" />
-                    <textarea name="mesagge" id="message" placeholder="MENSAJE"></textarea>
-                    <button type="submit">Enviar <i class='bx bx-send'></i></button>
-                    <p id="message-send">
-                        ¡Gracias por tu mensaje!
-                    </p>
+                    <textarea name="message" id="message" placeholder="MENSAJE"></textarea>
+                    <button type="submit" id="send-form">Enviar <i class='bx bx-send'></i></button>
+                    <p id="message-send" style="display: none;">¡Gracias por tu mensaje!</p>
+                    <p id="error-message" style="display: none;">Por favor, completa todos los campos correctamente.</p>
                 </form>
             </div>
-
             <div class="contact-info">
                 <i class='bx bx-envelope mail-icon'></i>
                 <p>Déjame un mensaje o contáctame por redes</p>
@@ -169,10 +150,8 @@
     </section>
     <footer></footer>
     <script src="script.js"></script>
-    <script src="formulary.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </body>
 
 </html>

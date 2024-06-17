@@ -14,15 +14,15 @@ document.addEventListener("DOMContentLoaded", () => {
     navbarLinks.forEach((link) => link.classList.remove("active"));
   });
 
-//---MOBILE MENU FUNCTION---
-function toggleMobileMenu(menu) {
-  menu.classList.toggle('open');
-  document.querySelector('.mobile-menu').classList.toggle('open');
-}
+  //--- MOBILE MENU FUNCTION ---
+  function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+    document.querySelector('.mobile-menu').classList.toggle('open');
+  }
 
-document.getElementById('burger-menu').addEventListener('click', function() {
-  toggleMobileMenu(this);
-});
+  document.getElementById('burger-menu').addEventListener('click', function() {
+    toggleMobileMenu(this);
+  });
 
   //--- LINK SECTIONS AND CONTACT-BTN ---
   const contactButton = document.querySelector(".contact-btn");
@@ -126,5 +126,37 @@ document.getElementById('burger-menu').addEventListener('click', function() {
 
   languageBtn.addEventListener("click", () => {
     languageBtn.classList.toggle("clicked");
+  });
+
+  // --- FORM HANDLING ---
+  const contactForm = document.getElementById("contact-form");
+
+  contactForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    if (name && email && message) {
+      emailjs.send("portfolio-form", "template_s2rmmze", {
+        from_name: name,
+        from_email: email,
+        message: message
+      })
+      .then(() => {
+        document.getElementById("message-send").style.display = "block";
+        setTimeout(() => {
+          document.getElementById("message-send").style.display = "none";
+        }, 5000);
+        contactForm.reset();
+      }, (error) => {
+        console.log("FAILED...", error);
+      });
+    } else {
+      document.getElementById("error-message").style.display = "block";
+      setTimeout(() => {
+        document.getElementById("error-message").style.display = "none";
+      }, 5000);
+    }
   });
 });

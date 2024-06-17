@@ -636,10 +636,9 @@ textarea::placeholder {
   transform: scale(1.05);
 }
 
-#message-send {
-  display: none;
+#message-send, #error-message {
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .contact-info {
@@ -831,6 +830,10 @@ textarea::placeholder {
   }
   .home-img img{
     margin-top: 90px;
+  }
+  #message-send, #error-message {
+    text-align: center;
+    font-size: 15px;
   }
 }
 @media (max-width: 480px) {
