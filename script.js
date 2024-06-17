@@ -14,6 +14,16 @@ document.addEventListener("DOMContentLoaded", () => {
     navbarLinks.forEach((link) => link.classList.remove("active"));
   });
 
+//---MOBILE MENU FUNCTION---
+function toggleMobileMenu(menu) {
+  menu.classList.toggle('open');
+  document.querySelector('.mobile-menu').classList.toggle('open');
+}
+
+document.getElementById('burger-menu').addEventListener('click', function() {
+  toggleMobileMenu(this);
+});
+
   //--- LINK SECTIONS AND CONTACT-BTN ---
   const contactButton = document.querySelector(".contact-btn");
   const contactSection = document.querySelector("#contact");
@@ -68,7 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   srRight.reveal("#about-info-rigth", { delay: 100 });
   srRight.reveal(".contact-info", { delay: 100 });
-  
 
   // --- DARK MODE ---
   let darkMode = localStorage.getItem("darkMode");
@@ -117,12 +126,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   languageBtn.addEventListener("click", () => {
     languageBtn.classList.toggle("clicked");
-  });
-
-  const menuIcon = document.getElementById('menu-icon');
-  const navbar = document.querySelector('.navbar');
-
-  menuIcon.addEventListener('click', () => {
-    navbar.classList.toggle('active');
   });
 });

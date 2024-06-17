@@ -17,16 +17,33 @@
 
 <body>
     <header class="header">
-        <a href="#home" class="logo">Ana <span>Alvarez</span></a>
         <nav class="navbar">
-            <a href="#about-me">Sobre mi</a>
-            <a href="#projects">Proyectos</a>
-            <a href="#contact">Contacto</a>
-            <i id="light-mode" class='bx bxs-moon'></i>
-            <!-- <i id="dark-mode" class="bx bx-sun"></i> -->
-            <div class="languaje-btn"><i class="uil uil-english-to-chinese"></i></div>
-            </nav>
-        <i class="bx bx-menu" id="menu-icon"></i>
+            <div class="logo">
+                <p href="#home">Ana <span>Alvarez</span></p>
+            </div>
+            <ul class="nav-links">
+                <li><a class="menu-links" href="#about-me">Sobre mi</a></li>
+                <li><a class="menu-links" href="#projects">Proyectos</a></li>
+                <li><a class="menu-links" href="#contact">Contacto</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <i id="light-mode" class='bx bxs-moon'></i>
+                <!-- <i id="dark-mode" class="bx bx-sun"></i> -->
+                <div class="languaje-btn"><i class="uil uil-english-to-chinese"></i></div>
+                <!-- <i class="bx bx-menu" id="menu-icon"></i>
+            <i class="uil uil-times" id="close-menu"></i> -->
+            </div>
+        <div id="burger-menu" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a class="menu-links" href="#about-me">Sobre mi</a></li>
+                <li><a class="menu-links" href="#projects">Proyectos</a></li>
+                <li><a class="menu-links" href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+        </nav>
     </header>
     <section class="home" id="home">
         <div class="home-img">
@@ -36,12 +53,15 @@
             <h1>Hola! soy <span>Ana</span></h1>
             <h3 class="text-animation"><span></span></h3>
             <p>
-                Soy una entusiasta desarrolladora Fullstack Java. Mi pasión es crear soluciones innovadoras y eficientes que impulsen el mundo digital. Echa un vistazo a mis proyectos y no dudes en contactarme si deseas colaborar.
+                Soy una entusiasta desarrolladora Fullstack Java. Mi pasión es crear soluciones innovadoras y eficientes
+                que impulsen el mundo digital. Echa un vistazo a mis proyectos y no dudes en contactarme si deseas
+                colaborar.
             </p>
-            <div class="contact-btn-container">               
-                <button class="contact-btn" type="button">Contáctame aquí <br><i class='bx bx-envelope mail-icon' ></i></button>
+            <div class="contact-btn-container">
+                <button class="contact-btn" type="button">Contáctame aquí <br><i
+                        class='bx bx-envelope mail-icon'></i></button>
             </div>
-            
+
         </div>
         </div>
         </div>
@@ -50,14 +70,18 @@
         <h2 class="heading">Sobre mi</h2>
         <div class="about-container">
             <div class="info-container">
-                <div class="about-info"  id="about-info-left">
+                <div class="about-info" id="about-info-left">
                     <p>
-                        Soy Ana, una apasionada desarrolladora Fullstack con experiencia tanto en el diseño frontend con JavaScript como en el desarrollo backend con Java y Spring. Mi enfoque es crear aplicaciones web robustas y escalables que ofrezcan una experiencia excepcional al usuario.
+                        Soy Ana, una apasionada desarrolladora Fullstack con experiencia tanto en el diseño frontend con
+                        JavaScript como en el desarrollo backend con Java y Spring. Mi enfoque es crear aplicaciones web
+                        robustas y escalables que ofrezcan una experiencia excepcional al usuario.
                     </p>
                 </div>
-                <div class="about-info"  id="about-info-rigth">
+                <div class="about-info" id="about-info-rigth">
                     <p>
-                        Mi habilidad para el diseño frontend me permite crear interfaces atractivas y funcionales, mientras que mi experiencia en el desarrollo backend garantiza la robustez y seguridad de las aplicaciones.
+                        Mi habilidad para el diseño frontend me permite crear interfaces atractivas y funcionales,
+                        mientras que mi experiencia en el desarrollo backend garantiza la robustez y seguridad de las
+                        aplicaciones.
                     </p>
                 </div>
             </div>
@@ -88,9 +112,9 @@
                         <div class="body-card-back">
                             <p>Project description: Lorem ipsum dolor sit amet consectetur. Praesent morbi ipsum sem id
                                 in. Ut aenean feugiat penatibus id commodo interdum id arcu neque.</p>
-                                <div class="project-btn">
-                                    <input type="button" value="Go to project">
-                                </div>                            
+                            <div class="project-btn">
+                                <input type="button" value="Go to project">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -105,9 +129,9 @@
                         <div class="body-card-back">
                             <p>Project description: Lorem ipsum dolor sit amet consectetur. Praesent morbi ipsum sem id
                                 in. Ut aenean feugiat penatibus id commodo interdum id arcu neque.</p>
-                                <div class="project-btn">
-                                    <input type="button" value="Go to project">
-                                </div>
+                            <div class="project-btn">
+                                <input type="button" value="Go to project">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -119,22 +143,26 @@
         <div class="contact-container">
             <div class="form-container">
                 <form action="" class="contact-form">
-                    <input type="text" placeholder="NOMBRE" id="name"/>
+                    <input type="text" placeholder="NOMBRE" id="name" />
                     <input type="email" placeholder="EMAIL" id="email" />
                     <textarea name="mesagge" id="message" placeholder="MENSAJE"></textarea>
                     <button type="submit">Enviar <i class='bx bx-send'></i></button>
                     <p id="message-send">
                         ¡Gracias por tu mensaje!
-                      </p>
+                    </p>
                 </form>
             </div>
 
             <div class="contact-info">
-                <i class='bx bx-envelope mail-icon' ></i>
+                <i class='bx bx-envelope mail-icon'></i>
                 <p>Déjame un mensaje o contáctame por redes</p>
                 <div class="contact-icons">
-                    <i class='bx bxl-github cicon'></i>
-                    <i class='bx bxl-linkedin-square cicon'></i>
+                    <a href="https://github.com/AnaIsabelAlvarez98" target="_blank">
+                        <i class='bx bxl-github cicon' id="link-to-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/anaialvarez/" target="_blank">
+                        <i class='bx bxl-linkedin-square cicon' id="link-to-linkedin"></i>
+                    </a>
                 </div>
             </div>
         </div>
